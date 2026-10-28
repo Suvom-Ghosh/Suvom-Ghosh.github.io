@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Suvom Ghosh – Marketing Analytics & Martech</title>
+<meta name="description" content="Digital marketing professional with 8 years of experience in performance marketing, BI reporting and marketing automation.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Suvom Ghosh – Marketing Analytics & Martech">
+<meta property="og:description" content="Case studies in performance marketing, BI reporting and marketing automation.">
+<meta property="og:url" content="https://suvom-ghosh.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F6F8; --card:#FFFFFF; --ink:#14213D; --muted:#566074; --line:#DCE1EA;
+  --accent:#1F5EFF; --accent-soft:#E6EDFF; --bar-before:#B8C0CF; --warn-bg:#FFF4D6; --warn-ink:#6B4E00;
+  --head:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1320; --card:#151B2C; --ink:#E8ECF5; --muted:#9AA5BA; --line:#263046;
+    --accent:#7C9BFF; --accent-soft:#1D2644; --bar-before:#46506A; --warn-bg:#3A2F10; --warn-ink:#F3D98B;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1320; --card:#151B2C; --ink:#E8ECF5; --muted:#9AA5BA; --line:#263046;
+  --accent:#7C9BFF; --accent-soft:#1D2644; --bar-before:#46506A; --warn-bg:#3A2F10; --warn-ink:#F3D98B;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 var(--body)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+.demo{background:var(--warn-bg);color:var(--warn-ink);font-size:15px;padding:10px 0;border-bottom:1px solid var(--line)}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;flex-wrap:wrap}
+.brand{font:700 20px var(--head);letter-spacing:-.01em}
+nav{display:flex;gap:20px;flex-wrap:wrap;font-size:16px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink);text-decoration:underline}
+h1,h2,h3{font-family:var(--head);line-height:1.15;letter-spacing:-.02em;margin:0}
+.hero{padding:56px 0 48px}
+.hero h1{font-size:clamp(34px,6vw,60px);font-weight:700;max-width:18ch}
+.hero p{font-size:20px;color:var(--muted);max-width:56ch;margin:20px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#0E1320}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary{color:#0E1320}}
+.btn.ghost{color:var(--accent)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;margin:40px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts div{padding:18px 20px 18px 0}
+.facts b{display:block;font:700 17px var(--head)}
+.facts span{color:var(--muted);font-size:16px}
+section{padding:48px 0}
+section>.wrap>h2{font-size:30px;margin-bottom:8px}
+.lede{color:var(--muted);margin:0 0 28px;max-width:60ch}
+.case{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:28px;margin-bottom:24px}
+.case h3{font-size:24px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 20px;padding:0;list-style:none}
+.tags li{background:var(--accent-soft);color:var(--accent);padding:3px 10px;border-radius:99px;font-size:14px;font-weight:600}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media (max-width:720px){.cols{grid-template-columns:1fr}}
+.cols h4{margin:0 0 6px;font:700 16px var(--head)}
+.cols p,.cols ul{margin:0 0 16px;font-size:17px}
+.cols ul{padding-left:20px}
+.result{border-left:4px solid var(--accent);padding-left:18px}
+.bar{margin:10px 0}
+.bar small{display:flex;justify-content:space-between;color:var(--muted);font-size:14px;margin-bottom:3px}
+.bar i{display:block;height:14px;border-radius:3px}
+.shot{border:2px dashed var(--line);border-radius:8px;padding:22px;margin-top:8px;color:var(--muted);font-size:15px;background:var(--bg)}
+.shot b{display:block;color:var(--ink);margin-bottom:4px;font-size:16px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}
+.box h3{font-size:19px;margin-bottom:8px}
+.box p,.box li{font-size:16px;color:var(--muted);margin:0}
+.box ul{padding-left:18px;margin:0}
+footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--muted);font-size:16px}
+footer a{font-weight:600}
+</style>
+</head>
+<body>
+<div class="demo"><div class="wrap"><b>Demo layout.</b> All names, figures and screenshots below are placeholders. Replace them with your own sanitized numbers before publishing.</div></div>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">Suvom Ghosh</div>
+    <nav aria-label="Primary">
+      <a href="#work">Case studies</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#proof">Proof library</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>I turn marketing data into decisions that cut cost and save time.</h1>
+      <p>8 years in digital marketing across multinational brands. I combine performance marketing, BI reporting and workflow automation, and I can build the tools I recommend.</p>
+      <div class="btns">
+        <a class="btn primary" href="#work">See case studies</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      <div class="facts">
+        <div><b>Performance marketing</b><span>Meta, Google, LinkedIn, DSP</span></div>
+        <div><b>Analytics and BI</b><span>Power BI, GA4, Tableau, SQL</span></div>
+        <div><b>Automation</b><span>n8n, Python</span></div>
+      </div>
+    </div>
+
+    <section id="work">
+      <div class="wrap" style="padding:0">
+        <h2>Case studies</h2>
+        <p class="lede">Three projects, each told as problem, decision and result. Figures are indexed against a baseline of 100 to protect confidential data.</p>
+
+        <article class="case">
+          <h3>Multi-channel campaign: lower cost per lead across Meta, Google and DSP</h3>
+          <ul class="tags"><li>Performance marketing</li><li>Budget allocation</li><li>Meta Ads</li><li>Google Ads</li></ul>
+          <div class="cols">
+            <div>
+              <h4>Problem</h4>
+              <p>Lead cost was rising while budget was split evenly across channels with no performance logic.</p>
+              <h4>My role</h4>
+              <p>I owned strategy, budget decisions and weekly optimization. An agency handled day-to-day execution.</p>
+              <h4>Decisions</h4>
+              <ul>
+                <li>Moved budget from broad display to the two best-converting audiences</li>
+                <li>Paused creatives that fell below a set conversion threshold</li>
+                <li>Added a weekly review with a fixed KPI sheet</li>
+              </ul>
+            </div>
+            <div class="result">
+              <h4>Result (sample figures)</h4>
+              <div class="bar"><small><span>Cost per lead, before</span><span>100</span></small><i style="width:100%;background:var(--bar-before)"></i></div>
+              <div class="bar"><small><span>Cost per lead, after</span><span>62</span></small><i style="width:62%;background:var(--accent)"></i></div>
+              <p style="margin-top:14px">Lead volume up 41% on the same budget.</p>
+              <div class="shot"><b>Screenshot goes here</b>Blurred Ads Manager view. Caption should say what the reader should notice and what you decided because of it.</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case">
+          <h3>Reporting: one dashboard for three brands</h3>
+          <ul class="tags"><li>Business intelligence</li><li>Power BI</li><li>Social analytics</li></ul>
+          <div class="cols">
+            <div>
+              <h4>Problem</h4>
+              <p>Social performance reports were built by hand from separate exports, so they arrived late and leadership questioned the numbers.</p>
+              <h4>My role</h4>
+              <p>I designed the data model, the dashboard and the monthly review process.</p>
+              <h4>Decisions</h4>
+              <ul>
+                <li>Standardized metric definitions across all brands</li>
+                <li>Replaced manual copy-paste with a single combined tracker</li>
+                <li>Added a view for content type, so the team could see what to make more of</li>
+              </ul>
+            </div>
+            <div class="result">
+              <h4>Result (sample figures)</h4>
+              <div class="bar"><small><span>Weekly reporting time, before</span><span>12 h</span></small><i style="width:100%;background:var(--bar-before)"></i></div>
+              <div class="bar"><small><span>Weekly reporting time, after</span><span>2 h</span></small><i style="width:17%;background:var(--accent)"></i></div>
+              <p style="margin-top:14px">Reports now ready before the weekly meeting, with one agreed set of numbers.</p>
+              <div class="shot"><b>Screenshot goes here</b>Dashboard page with brand names and real figures masked.</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case">
+          <h3>Automation: competitor monitoring with n8n</h3>
+          <ul class="tags"><li>Marketing automation</li><li>n8n (Docker)</li><li>Python</li><li>Competitor analysis</li></ul>
+          <div class="cols">
+            <div>
+              <h4>Problem</h4>
+              <p>Competitor checks were occasional and manual, so the team learned about campaigns and price moves late.</p>
+              <h4>My role</h4>
+              <p>I designed and built the workflow end to end, self-hosted on Docker.</p>
+              <h4>Decisions</h4>
+              <ul>
+                <li>Automated collection and a weekly summary instead of ad-hoc checks</li>
+                <li>Kept the stack self-hosted to control data and cost</li>
+                <li>Published a sanitized version of the workflow in the repository</li>
+              </ul>
+            </div>
+            <div class="result">
+              <h4>Result (sample figures)</h4>
+              <div class="bar"><small><span>Manual effort, before</span><span>6 h/week</span></small><i style="width:100%;background:var(--bar-before)"></i></div>
+              <div class="bar"><small><span>Manual effort, after</span><span>0.5 h/week</span></small><i style="width:8%;background:var(--accent)"></i></div>
+              <p style="margin-top:14px">Team sees competitor changes within days instead of weeks.</p>
+              <div class="shot"><b>Workflow diagram goes here</b>Screenshot of the n8n canvas, with a link to the repository.</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="toolkit">
+      <div class="wrap" style="padding:0">
+        <h2>Toolkit</h2>
+        <p class="lede">Grouped by what I use them for, not alphabetically.</p>
+        <div class="grid2">
+          <div class="box"><h3>Acquire</h3><ul><li>Meta Ads, Google Ads, LinkedIn Ads, TikTok Ads</li><li>DSP campaigns</li><li>SEO and content strategy</li></ul></div>
+          <div class="box"><h3>Measure</h3><ul><li>GA4</li><li>Power BI, Tableau</li><li>SQL, Python (Pandas, Matplotlib)</li></ul></div>
+          <div class="box"><h3>Automate</h3><ul><li>n8n (self-hosted)</li><li>CRM and customer communication flows</li><li>Marketing automation</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof">
+      <div class="wrap" style="padding:0">
+        <h2>Proof library</h2>
+        <p class="lede">Supporting material with no narrative. Each item is sanitized and tagged with the channel and year.</p>
+        <div class="grid2">
+          <div class="box"><h3>Campaign screenshots</h3><p>Meta, Google, LinkedIn and DSP views with spend and account details masked.</p></div>
+          <div class="box"><h3>Decks</h3><p>3 to 5 rebuilt slides per deck, not original files.</p></div>
+          <div class="box"><h3>Digital projects</h3><p>Website and CRM project summaries: scope, timeline, outcome.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2 style="font-size:26px;margin-bottom:10px">Contact</h2>
+    <p>Open to marketing analytics, martech and digital project roles. <br>
+    <a href="mailto:your-email@example.com">your-email@example.com</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/">GitHub</a></p>
+  </footer>
+</div>
+</body>
+</html>
